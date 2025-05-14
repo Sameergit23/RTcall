@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Call App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Real-Time Video Call</h2>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <div id="controls">
+    <input type="text" id="roomInput" placeholder="Room ID">
+    <button onclick="joinCall()">Join Call</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
